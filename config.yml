@@ -1,0 +1,2 @@
+links:
+- { src: ~/.dotfiles/i3/config, dest: ~/.config/i3/config }
