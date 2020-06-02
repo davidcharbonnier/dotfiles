@@ -1,0 +1,6 @@
+#!/bin/bash
+max=$(brightnessctl max)
+current=$(brightnessctl get)
+percent=$(echo "x=$current/$max*100; scale=0; x/1" | bc -l)
+
+echo "${percent}%"
