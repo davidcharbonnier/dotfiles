@@ -17,7 +17,7 @@ export TERMCMD="lxterminal"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/dcharbonnier/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -101,7 +101,7 @@ source <(kubectl completion zsh)
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # kubectl config
-export KUBECONFIG=$HOME/.kube/config:$HOME/Tests/kubernetes/distributions/kubespray/inventory/vagrant/artifacts/admin.conf:$HOME/Tests/kubernetes/distributions/rke/kube_config_cluster.yml:$HOME/Formations/k8s-miseenoeuvre/source/tp/kubeconfig/k8s-formation-admin.config:/home/dcharbonnier/Projets/OL/rancher/rke/kube_config_cluster.yml:/home/dcharbonnier/Présentations/20191117-cdl-atelier-servicemesh/demo/kubeconfig
+export KUBECONFIG=$HOME/.kube/config:$HOME/Tests/kubernetes/distributions/kubespray/inventory/vagrant/artifacts/admin.conf:$HOME/Tests/kubernetes/distributions/rke/kube_config_cluster.yml:$HOME/Formations/k8s-miseenoeuvre/source/tp/kubeconfig/k8s-formation-admin.config:$HOME/Projets/OL/rancher/rke/kube_config_cluster.yml:$HOME/Présentations/20191117-cdl-atelier-servicemesh/demo/kubeconfig
 
 # vagrant default provider
 export VAGRANT_DEFAULT_PROVIDER=libvirt
@@ -157,7 +157,7 @@ alias ol-pidgin-sipe='docker run --rm -d --name pidgin -v /tmp/.X11-unix/:/tmp/.
 alias aws='docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli:latest'
 
 # added by travis gem
-[ ! -s /home/dcharbonnier/.travis/travis.sh ] || source /home/dcharbonnier/.travis/travis.sh
+[ ! -s $HOME/.travis/travis.sh ] || source $HOME/.travis/travis.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
