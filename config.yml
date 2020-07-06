@@ -11,7 +11,6 @@ links:
 - { src: ~/.dotfiles/rofi-pass, dest: ~/.config/rofi-pass }
 # SpaceVim
 - { src: ~/.dotfiles/SpaceVim.d, dest: ~/.SpaceVim.d }
-- { src: ~/.SpaceVim.d, dest: ~/.vim }
 # zsh
 - { src: ~/.dotfiles/zsh/.zshrc, dest: ~/.zshrc }
 - { src: ~/.dotfiles/zsh/.p10k.zsh, dest: ~/.p10k.zsh }
