@@ -1,0 +1,241 @@
+palette = "catppuccin_frappe"
+
+format = """
+╭─ $username$hostname$os$directory$git_branch$git_status$fill$kubernetes$aws$terraform$python
+╰─$character
+"""
+
+[character]
+success_symbol = '[󰅂](green)'
+error_symbol = '[󰅂](red)'
+
+[line_break]
+disabled = false
+
+[aws]
+symbol = " "
+disabled = false
+force_display = true
+style = "bold yellow"
+
+[buf]
+symbol = " "
+disabled = true
+
+[c]
+symbol = " "
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[conda]
+symbol = " "
+disabled = true
+
+[dart]
+symbol = " "
+disabled = true
+
+[directory]
+read_only = " 󰌾"
+style= "blue"
+format = "in [$path]($style)[$read_only]($read_only_style) "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+disabled = true
+
+[elm]
+symbol = " "
+disabled = true
+
+[fill]
+symbol = " "
+disabled = false
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+disabled = true
+
+[guix_shell]
+symbol = " "
+disabled = true
+
+[haskell]
+symbol = " "
+disabled = true
+
+[haxe]
+symbol = " "
+disabled = true
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_only = false
+ssh_symbol = " "
+style = "bold green"
+format = '[$ssh_symbol$hostname]($style) '
+
+[java]
+symbol = " "
+disabled = true
+
+[julia]
+symbol = " "
+disabled = true
+
+[kubernetes]
+symbol = "󱃾 "
+disabled = false
+style = "blue"
+format = 'on [$symbol$context]($style) '
+
+[lua]
+symbol = " "
+disabled = true
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+disabled = true
+
+[nim]
+symbol = "󰆥 "
+disabled = true
+
+[nix_shell]
+symbol = " "
+disabled = true
+
+[nodejs]
+symbol = " "
+disabled = true
+
+[os]
+format = "[$symbol]($style)"
+style = "bold green"
+disabled = false
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+disabled = true
+
+[php]
+disabled = true
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
+detect_extensions = []
+detect_files = []
+disabled = false
+
+[rlang]
+symbol = "󰟔 "
+disabled = true
+
+[ruby]
+symbol = " "
+disabled = true
+
+[rust]
+symbol = " "
+disabled = true
+
+[scala]
+symbol = " "
+disabled = true
+
+[terraform]
+symbol = "󱁢 "
+
+[username]
+format = '[$user]($style) on '
+style_user = "bold yellow"
+disabled = false
+show_always = true
+
+[palettes.catppuccin_frappe]
+rosewater = "#f2d5cf"
+flamingo = "#eebebe"
+pink = "#f4b8e4"
+mauve = "#ca9ee6"
+red = "#e78284"
+maroon = "#ea999c"
+peach = "#ef9f76"
+yellow = "#e5c890"
+green = "#a6d189"
+teal = "#81c8be"
+sky = "#99d1db"
+sapphire = "#85c1dc"
+blue = "#8caaee"
+lavender = "#babbf1"
+text = "#c6d0f5"
+subtext1 = "#b5bfe2"
+subtext0 = "#a5adce"
+overlay2 = "#949cbb"
+overlay1 = "#838ba7"
+overlay0 = "#737994"
+surface2 = "#626880"
+surface1 = "#51576d"
+surface0 = "#414559"
+base = "#303446"
+mantle = "#292c3c"
+crust = "#232634"
