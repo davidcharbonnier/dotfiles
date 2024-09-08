@@ -1,0 +1,4 @@
+alias ls='exa --icons -F -H --group-directories-first -1'
+alias ll='ls -alh'
+alias ktx='kubectl ctx'
+alias kns='kubectl ns'
